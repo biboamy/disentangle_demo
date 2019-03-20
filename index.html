@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Auto Re-arrangment</title>
+    <link rel="stylesheet" href="src/styleV2.css" >
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/datalegreya" type="text/css"/> 
+    <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+</head>
+
+<div>
+        <script src='src/Js/jquery-3.3.1.min.js'></script>
+        <script src='src/Js/MidiConvert.js'></script>
+        <script src='src/Js/two.min.js'></script>
+        <script src='src/Js/midiplayer.min.js'></script>
+        <script src='src/Js/ui.js'></script>
+        
+</div>
+<body>
+<div id ='title' > Auto Re-arrangment </div>    
+
+    
+    <img class="play_pic" id="playIcon" src="src/assets/pauseIcon.png">
+
+  <input type="checkbox" id="menu_opener_id" class="menu_opener">
+  <label for="menu_opener_id" class="menu_opener_label"></label>
+  <div id="pickScript1" class="link_one link_general">Les_Potes</div>
+  <div id='pickScript2' class="link_two link_general">Untitled</div>
+  <div id='pickScript3'class="link_three link_general">Faded</div>
+  <div id='pickScript4'class="link_four link_general">Dream_a_little_dream_of_me</div>
+
+  </input>
+  
+  <input type="checkbox" id="menu_opener_id_2" class="menu_opener_2">
+  <label for="menu_opener_id_2" class="menu_opener_label_2"></label>
+  <div id="pickScript0_2" class="link_zero_2 link_general_2">0</div>
+  <div id="pickScript1_2" class="link_one_2 link_general_2">1</div>
+  <div id='pickScript2_2' class="link_two_2 link_general_2">2</div>
+  <div id='pickScript3_2'class="link_three_2 link_general_2">3</div>
+  <div id='pickScript4_2'class="link_four_2 link_general_2">4</div>
+  </input>
+<div class='frontPage'>
+<div class="index">
+<h1>Auto<br> Re-arrangment</h1>
+<p> A demo webpage based on machine learning algorithm to automatically re-arrange music pieces. The player can explore four different re-arrangements for each music piece.</p>
+<a  href="https://musicai.citi.sinica.edu.tw/">Learn more about how it works.</a>
+<button id='playButton'>Start</button>
+<div class='btn'>-</div>
+<p class="btnText">Button for picking the midi script</p>
+<div class='btn' id='btn2'>-</div>
+<p class="btnText">Button for changing the instrument arrangment </p>
+<p>Webpage Made By : ITung Chiang</p>
+<a href="https://musicai.citi.sinica.edu.tw/">Music AI Lab </a>
+</div>
+
+
+</div>
+
+<script src="index.js"></script>
+<div id='debug1'></div>
+<div class='instrumentName'>
+<div id='Piano' >Piano&ensp;</div>
+<div id='A-Guitar' >A-Guitar&ensp;</div>
+<div id='E-Guitar' >E-Guitar&ensp;</div>
+<div id='Trumpet' >Trumpet&ensp;</div>
+<div id='Saxphone' >Saxophone&ensp;</div>
+<div id='Violin' >Violin&ensp;</div>
+<div id='Cello' >Cello&ensp;</div>
+<div id='Flute' >Flute&ensp;</div>
+<div id='Bass' >Bass&ensp;</div>
+</div>
+<div class='loadingPage'>
+    loading...</div>
+
+</body>
+</div>
+
+</html>
