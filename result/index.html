@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<center>
+<div>
+	<h1>Music Style Transfer Demo</h1>
+	<h4>This site demonstrate the result of composition style transfer. Given an existing song, we aim to </br>
+	    generate a new music by changing the instrumentation and rearranging the music piece.</h4>
+	<h4><b>Strings</b>: Violin + Cello  / <b>Band</b>: Guitar + Bass + Melody</h4>
+	<p>The paper will soon appear in IJCAI 2019 ;) </p>
+	<br>
+</div>
+<table>
+  <tr>
+  	<th></th>
+    <th>Original Song</th>
+    <th>After Style Transfer</th>
+  </tr>
+
+  <tr>
+    <th>Guitar -> Strings</th>
+    <th><audio controls><source src="tmp_result/mp3/origin/[Gtr]Fly_Me_To_The_Moon_guitar_chord_melody.mp3" type="audio/mpeg"></audio></th>
+    <th><audio controls><source src="tmp_result/mp3/to string/[Gtr->Vio,Cel]Fly_Me_To_The_Moon_guitar_chord_melody->Giga_H.VB.xx.mid.mp3" type="audio/mpeg"></audio></th>
+  </tr>
+
+  <tr>
+    <th>Band -> Strings</th>
+    <th><audio controls><source src="tmp_result/mp3/origin/[Gtr,Vio,Bas]From_A_Railway_Carriage.mp3" type="audio/mpeg"></audio></th>
+    <th><audio controls><source src="tmp_result/mp3/to string/[Gtr,Vio,Bas->Vio,Cel]From_A_Railway_Carriage->Air.mid.mp3" type="audio/mpeg"></audio></th>
+  </tr>
+
+  <tr>
+    <th>Piano -> Strings</th>
+    <th><audio controls><source src="tmp_result/mp3/origin/[Piano]Hallelujah.mp3" type="audio/mpeg"></audio></th>
+    <th><audio controls><source src="tmp_result/mp3/to string/[Piano->Vio,Cel]Hallelujah->Dear_Theodosia.mp3" type="audio/mpeg"></audio></th>
+  </tr>
+
+  <tr>
+  	<th>Piano -> Band:</th>
+    <th><audio controls><source src="tmp_result/mp3/origin/[Piano]Hallelujah.mp3" type="audio/mpeg"></audio></th>
+    <th><audio controls><source src="tmp_result/mp3/to band/[Piano->Gtr,Flu,Bas]Hallelujah->Preparacao_das_ofertas.mp3" type="audio/mpeg"></audio></th>
+  </tr>
+
+  <tr>
+    <th>String -> Band:</th>
+    <th><audio controls><source src="tmp_result/mp3/origin/[Vio,Cel]Dream_a_little_dream_of_me.mp3" type="audio/mpeg"></audio></th>
+    <th><audio controls><source src="tmp_result/mp3/to band/[Vio,Cel->Gtr,Vio,Bas]Dream_a_little_dream_of_me->Jek_di_Tharin.mid.mp3" type="audio/mpeg"></audio></th>
+  </tr>
+
+  <tr>
+    <th>Piano -> Band:</th>
+    <th><audio controls><source src="tmp_result/mp3/origin/[Piano]Let_Her_Go_Passenger.mp3" type="audio/mpeg"></audio></th>
+    <th><audio controls><source src="tmp_result/mp3/to band/[Piano->Gtr,Flu,Bas]Let_Her_Go_Passenger->Preparacao_das_ofertas.mp3" type="audio/mpeg"></audio></th>
+  </tr>
+
+  <tr>
+    <th>Strings -> Guitar</th>
+    <th><audio controls><source src="tmp_result/mp3/origin/[Vio,Cel]Dream_a_little_dream_of_me.mp3" type="audio/mpeg"></audio></th>
+    <th><audio controls><source src="tmp_result/mp3/to gtr/[Vio,Cel->Gtr]Dream_a_little_dream_of_me->Fly_Me_To_The_Moon_guitar_chord_melody.mp3" type="audio/mpeg"></audio></th>
+  </tr>
+
+  <tr>
+    <th>Band -> Guitar</th>
+    <th><audio controls><source src="tmp_result/mp3/origin/[Gtr,Vio,Bas]Untitled_Guitar_Electric_Bass_and_Violin_Trio_by_Hannah.mp3" type="audio/mpeg"></audio></th>
+    <th><audio controls><source src="tmp_result/mp3/to gtr/[Gtr,Vio,Bas->Gtr]Untitled_Guitar_Electric_Bass_and_Violin_Trio_by_Hannah->Fly_Me_To_The_Moon_guitar_chord_melody.mp3" type="audio/mpeg"></audio></th>
+  </tr>
+
+  <tr>
+    <th>Band -> Guitar</th>
+    <th><audio controls><source src="tmp_result/mp3/origin/[Gtr,Flu,Bas]Cheese.mp3" type="audio/mpeg"></audio></th>
+    <th><audio controls><source src="tmp_result/mp3/to gtr/[Gtr,Flu,Bas->Gtr]Cheese->Fly_Me_To_The_Moon_guitar_chord_melody.mp3" type="audio/mpeg"></audio></th>
+  </tr>
+
+  <tr>
+    <th>Strings -> Piano</th>
+    <th><audio controls><source src="tmp_result/mp3/origin/[Vio,Cel]Dream_a_little_dream_of_me.mp3" type="audio/mpeg"></audio></th>
+    <th><audio controls><source src="tmp_result/mp3/to piano/[Vio,Cel->Piano]Dream_a_little_dream_of_me->Ed_Sheeran_Perfect.mp3" type="audio/mpeg"></audio></th>
+  </tr>
+
+  <tr>
+    <th>Band -> Piano</th>
+    <th><audio controls><source src="tmp_result/mp3/origin/[Gtr,Vio,Bas]Untitled_Guitar_Electric_Bass_and_Violin_Trio_by_Hannah.mp3" type="audio/mpeg"></audio></th>
+    <th><audio controls><source src="tmp_result/mp3/to piano/[Gtr,Vio,Bas->Piano]Untitled_Guitar_Electric_Bass_and_Violin_Trio_by_Hannah->Hallelujah.mp3" type="audio/mpeg"></audio></th>
+  </tr>
+
+  <tr>
+  	<th>Strings -> Piano</th>
+    <th><audio controls><source src="tmp_result/mp3/origin/[Vio,Cel]Giga_H.VB.xx.mp3" type="audio/mpeg"></audio></th>
+    <th><audio controls><source src="tmp_result/mp3/to piano/[Vio,Cel->Piano]Giga_H.VB.xx->Hallelujah.mp3" type="audio/mpeg"></audio></th>
+  </tr>
+
+ </table>
+</center>
+</body>
+</html>
